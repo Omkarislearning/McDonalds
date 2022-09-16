@@ -195,7 +195,7 @@ header ul
     top: 20px;
     right: 0;
     cursor: pointer;
-    background-color: #017143;
+    background:url(menu.png);
     background-position:right;
     background-size: 30px;
     background-repeat: no-repeat;
@@ -231,7 +231,7 @@ header ul li
 .main
 {
     flex-direction: column;
-    margin-top: 10px;
+    top: 50px;
 }
 
 .main .textbox
