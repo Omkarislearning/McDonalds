@@ -1,0 +1,275 @@
+*{
+  
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.conatainer
+{
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    position: relative;
+}
+
+header
+{
+position:absolute;
+top:0;
+left: 0;
+display: flex;
+justify-content: space-between;
+width: 100%;
+align-items: center;
+padding:5px 60px;
+}
+header span img
+{
+max-width: 80px;
+margin-top: 10px;
+}
+
+header ul 
+{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin:0 30px;
+}
+
+header ul li
+{
+    display: inline-block;
+    margin: 0 10px;
+    list-style: none;
+    cursor: pointer;
+    font-weight: 500;
+    background-color: #108856;
+    color: white;
+    padding: 7px 13px;
+    border-radius: 20px;
+}
+
+.main
+{
+    position:relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 40px;
+}
+
+.main .textbox
+{
+max-width: 700px;
+}
+.main .textbox h3
+{
+    font-size: 4rem;
+    line-height: 4.7rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+
+}
+.main .textbox h3 b
+{
+    color:rgb(8, 117, 55);
+}
+
+.main .textbox p
+{
+    font-weight: 500;
+    line-height: 1.3rem;
+}
+.main .textbox button
+{
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    background-color: rgb(8, 117, 55);
+    padding: 8px 20px;
+    border-radius: 20px;
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+.main .imgbox
+{
+    max-width: 450px;
+}
+.main .imgbox img
+{
+    max-width:330px ;
+}
+
+.thumb-picks
+{
+    position:absolute;
+    bottom: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+.thumb-picks ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.thumb-picks ul li
+{
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+    cursor: pointer;
+ 
+}
+.thumb-picks ul li img:hover
+{
+    transform: translateY(-15px);
+}
+
+.thumb-picks ul li img
+{
+    width: 80px;
+    transition:0.5s;
+}
+.social_links
+{
+    position:absolute;
+    left: 10px;
+}
+.social-ul
+{
+    padding: 25px 5px;
+    margin: 10px ; 
+}
+.social-ul li
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 20px;
+}
+.circle
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #017143;
+    clip-path: circle(600px at right 800px);
+}
+
+
+@media (max-width:990px)
+{
+
+header
+{
+    padding:10px 10px 20px;
+}
+header span img
+{
+    max-width: 50px;
+}
+header ul
+{
+    display: none;
+}
+.toggle
+{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 20px;
+    right: 0;
+    cursor: pointer;
+    background-color: #017143;
+    background-position:right;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    filter: invert(1);
+    margin-right: 10px;
+}
+
+header  ul.navbar.active
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    z-index: 50;
+
+}
+header ul li
+{
+    margin: 10px 10px;
+    font-size: 1.5rem;
+}
+.conatainer
+{
+    padding: 10px 30px 120px ;
+}
+
+.main
+{
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.main .textbox
+{
+    padding: 10px 20px 5px 10px;
+    max-width: 100%;
+}
+
+.main .textbox h3
+{
+    margin-top: 10px;
+    font-size: 2.7rem;
+    line-height: normal;
+}
+.circle
+{
+background-color: #017143;
+clip-path: circle(400px at center bottom);
+}
+.main .imgbox
+{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+.main .imgbox img
+{
+    max-width:280px
+}
+
+.thumb-picks
+{
+    bottom: 10px;
+    margin-top: 20px;
+}
+.social-ul
+{
+    margin: 0;
+    padding: 0;
+}
+}

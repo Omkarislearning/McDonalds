@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks - Coffee and More</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="conatainer">
+        <div class="circle"></div>
+        <header>
+            <span>
+                <img src="starbucks_logo.png" alt="">
+            </span>
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <nav>
+                <ul class="navbar">
+                    <li class="navEle">Home</li>
+                    <li class="navEle">Menu</li>
+                    <li class="navEle">What's new</li>
+                    <li class="navEle">Contact</li>
+                </ul>
+            </nav>
+        </header>
+        <div class="main">
+            <div class="textbox">
+                <h3>Its not just Coffee <br>
+                its <b class="starbucks">Starbucks</b></h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem necessitatibus ex incidunt totam exercitationem! Labore quod ducimus, facilis vel fuga, ipsum consectetur mollitia culpa, dolor maxime sint? Harum, error eos?
+                </p>
+                <button class="btn">Learn More</button>
+            </div>
+            <div class="imgbox">
+                <img src="img1.png" class="starbucksMain">
+            </div>
+        </div>
+            <span class="thumb-picks">
+                <ul>
+                    <li> <img src="thumb1.png" alt="" onclick="photos('img1.png'); changeColor('#017143');  colorbody('#017143'); starbucks('#017143'); button('#017143')   "></li>
+                    <li> <img src="thumb2.png" alt="" onclick="photos('img2.png'); changeColor('#eb7495'); colorbody('#eb7495');  starbucks('#eb7495'); button('#eb7495')    "></li>
+                    <li><img src="thumb3.png" alt="" onclick="photos('img3.png') ; changeColor('#d752b1'); colorbody('#d752b1');  starbucks('#d752b1'); button('#d752b1')    "></li>
+                </ul>
+            </span>
+            <div class="social_links">
+                <ul class="social-ul">
+                    <li>
+                        <a href="#"><img src="/facebook.png" alt="">
+                        </a></li>
+                    <li>
+                        <a href="#">  <img src="/twitter.png" alt=""></a>
+                    </li>
+                    <li><a href="#"><img src="/instagram.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+   
+
+
+
+    <script>
+        function photos(anything)
+        {
+            document.querySelector('.starbucksMain').src=anything;
+        }
+
+        function changeColor(color)
+        {
+            const circle=document.querySelector('.circle');
+            circle.style.background=color;
+        }
+
+        function colorbody(color)
+        {
+            const element=document.querySelectorAll('.navEle');
+            for(let i =0 ;i<element.length;i++)
+            {
+                element[i].style.background=color;
+            }
+        }
+        function starbucks(color)
+        {
+            
+            const starbucks1 =document.querySelector('.starbucks');
+            starbucks1.style.color=color;
+        }
+        function button(color)
+            {
+                const btn=document.querySelector('.btn');
+                btn.style.background=color;
+            }
+
+            function toggleMenu()
+            {
+                var toggle=document.querySelector('.toggle');
+                var nav=document.querySelector('.navbar');
+                toggle.classList.toggle('active');
+                nav.classList.toggle('active');
+            }
+    </script>
+</body>
+</html>
