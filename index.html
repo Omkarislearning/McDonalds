@@ -4,59 +4,201 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Starbucks - Coffee and More</title>
+    <title>Mcdonalnds - Iam Loving It</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="conatainer">
+    <div class="conatainer" id="Home">
         <div class="circle"></div>
         <header>
             <span>
-                <img src="starbucks_logo.png" alt="">
+                <img src="Assets/Images/Mcd_logo.png" alt="">
             </span>
             <div class="toggle" onclick="toggleMenu();">
             </div>
             <nav>
                 <ul class="navbar">
-                    <li class="navEle">Home</li>
-                    <li class="navEle">Menu</li>
-                    <li class="navEle">What's new</li>
-                    <li class="navEle">Contact</li>
+                    <li class="navEle"><a href="#Home">Home</a></li>
+                    <li class="navEle"><a href="#About">About</a></li>
+                    <li class="navEle"><a href="#shop">Products</a></li>
+                    <li class="navEle"><a href="#Contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
         <div class="main">
             <div class="textbox">
-                <h3>Its not just Coffee <br>
-                its <b class="starbucks">Starbucks</b></h3>
+                <h3>Its not just Burgers and Fries <br>
+                its <b class="starbucks">Mcdonalds</b></h3>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem necessitatibus ex incidunt totam exercitationem! Labore quod ducimus, facilis vel fuga, ipsum consectetur mollitia culpa, dolor maxime sint? Harum, error eos?
                 </p>
                 <button class="btn">Learn More</button>
             </div>
             <div class="imgbox">
-                <img src="img1.png" class="starbucksMain">
+                <img src="Assets/Images/meal1-removebg-preview.png" class="starbucksMain">
             </div>
         </div>
             <span class="thumb-picks">
                 <ul>
-                    <li> <img src="thumb1.png" alt="" onclick="photos('img1.png'); changeColor('#017143');  colorbody('#017143'); starbucks('#017143'); button('#017143')   "></li>
-                    <li> <img src="thumb2.png" alt="" onclick="photos('img2.png'); changeColor('#eb7495'); colorbody('#eb7495');  starbucks('#eb7495'); button('#eb7495')    "></li>
-                    <li><img src="thumb3.png" alt="" onclick="photos('img3.png') ; changeColor('#d752b1'); colorbody('#d752b1');  starbucks('#d752b1'); button('#d752b1')    "></li>
+                    <li> <img src="Assets/Images/mcd_hm1_thumb.ico" alt="" onclick="photos('Assets/Images/meal2.png');  "></li>
+                    <li> <img src="Assets/Images/burger_bg1.ico" alt="" onclick="photos('Assets/Images/burger_bg1.png');"></li>
+                    <li><img src="Assets/Images/Shakes_bg1.ico" alt="" onclick="photos('Assets/Images/shakes_bg1.png') ;  "></li>
                 </ul>
             </span>
             <div class="social_links">
                 <ul class="social-ul">
                     <li>
-                        <a href="#"><img src="/facebook.png" alt="">
+                        <a href="#"><img src="Assets/Social/facebook.png" alt="">
                         </a></li>
                     <li>
-                        <a href="#">  <img src="/twitter.png" alt=""></a>
+                        <a href="#">  <img src="Assets/Social/twitter.png" alt=""></a>
                     </li>
-                    <li><a href="#"><img src="/instagram.png" alt=""></a></li>
+                    <li><a href="#"><img src="Assets/Social/instagram.png" alt=""></a></li>
                 </ul>
             </div>
         </div>
+
+
+        <div class="container_about" id="About">
+            <div class="responsive-container-block bigContainer">
+                <div class="responsive-container-block Container">
+                  <div class="responsive-container-block leftSide">
+                    <p class="text-blk heading">
+                      About Us
+                    </p>
+                    <p class="text-blk subHeading">
+                        From adding more balanced options to our Happy Meal®, to serving up fresh beef Quarter Pounder® burgers that are cooked when you order, we’re always finding ways to show our commitment to our customers and our food. 
+                    </p>
+                    <button class="find_more">Find More</button>
+                  </div>
+                  <div class="responsive-container-block rightSide">
+                    <img class="number1img" src="Assets/About_img/1.jpg">
+                    <img class="number2img" src="Assets/About_img/3.png">
+                    <img class="number3img" src="Assets/About_img/2.png">
+                    <img class="number5img" src="Assets/About_img/4.jpg">
+                    <img class="number4vid" src="Assets/About_img/5.jpg">
+                    
+                    <!-- <img class="number7img" src="About_img/6.jpg"> -->
+                    <img class="number6img" src="Assets/About_img/6.jpg">
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <section class="shop" id="shop">
+            <div class="heading">
+                <span>Shop Now</span>
+                <h1><span class="burger">Bu</span>rgers,Fries and More </h1>
+            </div>
+
+            <div class="shop_container">
+
+                <div class="box_shop">
+                    <div class="box_img">
+                        <img src="Assets/Prod_img/bg_1.png" alt="" >
+                    </div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star" style="color: #e5d715;"></i>
+                        <i class="fa-solid fa-star" style="color: #e5d715;"></i>
+                        <i class="fa-solid fa-star" style="color: #e5d715;"></i>
+                        <i class="fa-solid fa-star" style="color: #e5d715;"></i>
+                        <i class="fa-solid fa-star-half-stroke " style="color: #e5d715;"></i>
+                    </div>
+                    <h2>Burgers</h2>
+                    <span>$14</span>
+                    <a href="" class="btn">Order Now</a>
+                </div>
+           
+           
+                <div class="box_shop">
+                    <div class="box_img">
+                        <img src="Assets/Prod_img/bg_2.png" alt=""  >
+                    </div>
+                    <div class="stars">   
+                        <i class="fa-solid fa-star" style="color: #e5d715;"></i>
+                        <i class="fa-solid fa-star" style="color: #e5d715;"></i>
+                        <i class="fa-solid fa-star" style="color: #e5d715;"></i>
+                        <i class="fa-solid fa-star" style="color: #e5d715;"></i>
+                        <i class="fa-solid fa-star-half-stroke " style="color: #e5d715;"></i>
+                    </div>
+                    <h2>Fries</h2>
+                    <span>$14</span>
+                    <a href="" class="btn">Order Now</a>
+                </div>
+           
+
+          
+                <div class="box_shop">
+                    <div class="box_img">
+                        <img src="Assets/Prod_img/bg3.png" alt="">
+                    </div>
+                    <div class="stars">    
+                        <i class="fa-solid fa-star" style="color: #e5d715;"></i>
+                        <i class="fa-solid fa-star" style="color: #e5d715;"></i>
+                        <i class="fa-solid fa-star" style="color: #e5d715;"></i>
+                        <i class="fa-solid fa-star" style="color: #e5d715;"></i>
+                        <i class="fa-solid fa-star-half-stroke " style="color: #e5d715;"></i> 
+                    </div>
+                    <h2>Frappe</h2>
+                    <span>$14</span>
+                    <a href="" class="btn">Order Now</a>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="Contact"> 
+            <div class="landing_page">
+                <div class="responsive-container-block big-container">
+                  <img class="bg-img" id="iq5bf" src="./Contact_bg.jpg">
+                  <div class="responsive-container-block container">
+                    <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12 left-one">
+                      <div class="content-box">
+                        <p class="text-blk1 section-head">
+                          Reach Us Out
+                        </p>
+                        <p class="text-blk section-subhead">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis volupta
+                        </p>
+                       
+                      </div>
+                    </div>
+                    <div class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6 right-one" id="i1zj">
+                      <form class="form-box">
+                        <div class="container-block form-wrapper">
+                          <p class="text-blk contactus-head">
+                            <a class="link" href="">
+                            </a>
+                            Get a quote
+                          </p>
+                          <p class="text-blk contactus-subhead">
+                            We will get back to you in 24 hours
+                          </p>
+                          <div class="responsive-container-block">
+                            <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i10mt-7">
+                              <input class="input" id="ijowk-7" name="FirstName" placeholder="First Name">
+                            </div>
+                            <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-6 wk-ipadp-6 emial" id="ityct">
+                              <input class="input" id="ipmgh-7" name="Email" placeholder="Email">
+                            </div>
+                            <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+                              <input class="input" id="imgis-6" name="PhoneNumber" placeholder="Phone Number">
+                            </div>
+                            <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i634i-7">
+                              <textarea aria-placeholder="Type message here" class="textinput" id="i5vyy-7" placeholder="Type message here"></textarea>
+                            </div>
+                          </div>
+                          <button class="submit-btn">
+                            Submit
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
    <script src="main.js"></script>
 </body>
 </html>
