@@ -216,7 +216,7 @@ header ul
     top: 20px;
     right: 0;
     cursor: pointer;
-    background:url(menu.png);
+    background:url(./Assets/menu.png);
     background-position:right;
     background-size: 30px;
     background-repeat: no-repeat;
