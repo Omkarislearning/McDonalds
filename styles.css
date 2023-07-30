@@ -329,9 +329,7 @@ clip-path: circle(305px at center bottom);
 }
 
 
-* {
-    font-family: Nunito, sans-serif;
-  }
+}
   
   .text-blk {
     padding-top: 0px;
@@ -975,7 +973,8 @@ clip-path: circle(305px at center bottom);
     }
   }
   
-  @media (max-width: 500px) {
+  @media (max-width: 500px)
+   {
     .landing_page .text-blk.section-head {
       font-size: 26px;
       line-height: 40px;
@@ -1017,4 +1016,3 @@ clip-path: circle(305px at center bottom);
     }
   }
 
-  /*_______________________ Contact section Code ______________________________*/
